@@ -1,0 +1,134 @@
+/* GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: wheat;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  select {
+    appearance: none;
+    outline: black;
+    background-color: wheat;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+  }
+  
+  .mb {
+    margin-bottom: 1rem;
+  }
+  
+  /* End GLobal Styles */
+  
+  .main-container {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E141B;
+  }
+  
+  .clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+    background-color: #fbae07;
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  
+  .submit-button {
+    border-color: black;
+    border: 10px;
+    border-radius: 1rem;
+    font-weight: bold;
+  }
+  
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  .set-alarm-container .set-alarm-container-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .alarm {
+    background-color: wheat;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+  }
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: rgba(230, 13, 13, 0.918);
+    font-weight: bold;
+    color: rgb(249, 247, 243);
+    font-size:xx-medium;
+  }
+  
+  .time {
+    color: #0E141B;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+ 
+  
+  .page-title{
+    background-color: #0E141B;
+    align-items: center;
+    text-align: center;
+    color: wheat;
+    
+  }
+
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
